@@ -170,7 +170,7 @@ void IrondashEngineContextPlugin::RegisterWithRegistrar(
   ++next_handle;
 
   EngineContext context;
-  context.hwnd = registrar->GetView()->GetNativeWindow();
+  //context.hwnd = registrar->GetView()->GetNativeWindow();
   context.texture_registrar =
       FlutterDesktopRegistrarGetTextureRegistrar(raw_registrar);
   context.binary_messenger =
