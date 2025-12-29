@@ -163,7 +163,7 @@ namespace irondash_engine_context
     {
       if(registrar_ != nullptr && registrar_->GetView() != nullptr)
       {
-        return registrar_->GetView()->GetNativeWindow();
+        return reinterpret_cast<size_t>(registrar_->GetView()->GetNativeWindow());
       }
       return 0;
     }
